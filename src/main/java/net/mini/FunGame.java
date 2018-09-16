@@ -51,13 +51,14 @@ public class FunGame {
         }
     }
 
+    // count pattern number
     private int countCharOfNumber(String numStr, String patternNumStr){
         if (numStr == null || numStr.equals("")) {
             return 0;
         }
         int index = numStr.indexOf(patternNumStr);
         int lastIndex = numStr.lastIndexOf(patternNumStr);
-        if(index != -1){ // 包含指定的字符
+        if(index != -1){
             if(index == lastIndex){
                 return 1;
             }else{
